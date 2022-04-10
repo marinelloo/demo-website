@@ -49,8 +49,8 @@ let c = "наледь";
 let d = "попрек";
 let e = "рубило";
 
-let sum1 = a + b + c + d + e;
-console.log(sum1.length);
+let sumWords = a + b + c + d + e;
+console.log(sumWords.length);
 
 //Task 6
 
@@ -63,7 +63,7 @@ console.log(`Variable: ` + "numberValue" + ` have type: ${typeof numberValue}`);
 console.log(`Variable: ` + "booleanValue" + ` have type: ${typeof booleanValue}`);
 
 // Task 7
-let years = prompt('Enter your age', '');
+let years = +prompt('Enter your age', '');
 let yourName = prompt('Enter your name', '');
 
 alert("Name: " + yourName + ", years:" + years);
@@ -73,7 +73,9 @@ alert("Name: " + yourName + ", years:" + years);
 let a1 = 4;
 let b1 = 3;
 
-[a1, b1] = [b1, a1]
+a1 = a1 + b1;
+b1 = a1 - b1;
+a1 = a1 - b1;
 
 console.log(a1);
 console.log(b1);
